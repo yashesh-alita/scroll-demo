@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Animation Demo</title>
+    <link rel="stylesheet" href="assets/css/locomotive-scroll.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <main class="flex flex-col" data-scroll-container>
+        <section 
+          id="hero"
+          class="w-full h-[100vh] border-b-2 border-black bg-white mr-2"
+          data-scroll-section
+        >
+          <p 
+            id="hero-desc" 
+            class="w-2/3 text-center m-auto relative top-[40%]"
+            data-scroll
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.<br/> 
+            Eaque ullam tempora cupiditate dignissimos dolores.
+          </p>
+        </section>
+        <section
+          id="horizontal" 
+          class="w-full h-[400vh] flex flex-col md:w-[400vw] md:h-[100vh] md:flex-row border-b-2 border-black bg-green-200 mr-2 md:overflow-hidden"
+          data-scroll-section
+        >
+          <div class="w-[100vw] h-full flex items-center justify-center" data-scroll>
+            <img 
+              src="https://images.placeholders.dev/?width=250&height=250&bgColor=%23023020&text=Image"
+            >
+          </div>
+          <div class="w-[100vw] h-full flex items-center justify-center" data-scroll>
+            <img 
+              src="https://images.placeholders.dev/?width=250&height=250&bgColor=%23023020&text=Image"
+            >
+          </div>
+          <div class="w-[100vw] h-full flex items-center justify-center" data-scroll>
+            <img 
+              src="https://images.placeholders.dev/?width=250&height=250&bgColor=%23023020&text=Image"
+            >
+          </div>
+          <div class="w-[100vw] h-full flex items-center justify-center" data-scroll>
+            <img 
+              src="https://images.placeholders.dev/?width=250&height=250&bgColor=%23023020&text=Image"
+            >
+          </div>
+        </section>
+        <section class="w-full h-[100vh] border-b-2 border-black bg-pink-200" data-scroll-section>
+          <p 
+            id="" 
+            class="w-2/3 text-center m-auto relative top-[40%]"
+            data-scroll
+          >
+            Lorem ipsum dolor <br/> 
+            Eaque ullam tempora
+          </p>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll/dist/locomotive-scroll.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
